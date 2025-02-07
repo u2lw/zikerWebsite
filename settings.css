@@ -1,5 +1,4 @@
-/* التنسيق العام */
-
+/* تم بناء وتصميم هذا الموقع بواسطة: الطالب عدي بندر السويداء */
 
 body {
     font-family: 'Lateef', cursive;
@@ -11,14 +10,6 @@ body {
     line-height: 1.6;
 }
 
-
-@font-face {
-    font-family: 'Tajawal';
-    src: url('fonts/Tajawal-Regular.woff2') format('woff2'),
-         url('fonts/Tajawal-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 
 header {
     font-family: 'Tajawal', sans-serif;
@@ -142,6 +133,19 @@ nav {
     animation: fadeIn 0.5s ease-in-out forwards;
 }
 
+
+#kahf li{
+    font-family:'KFGQPC Uthmanic Script HAFS';
+    font-size: 23px;
+}
+
+img{
+    max-width: 60%; 
+    border-radius:0%;
+    text-align: center
+}
+
+
 /* الذيل */
 footer {
     direction: rtl;
@@ -159,25 +163,78 @@ footer {
     animation: fadeIn 1s ease-in-out 1.5s forwards;
 }
 
-/* التصميم المتجاوب */
-@media (max-width: 600px) {
+/* تصميم عام للأجهزة الصغيرة (الهاتف) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px; 
+    }
+
     header h1 {
-        font-size: 24px;
+        font-size: 24px; 
     }
 
     header p {
-        font-size: 16px;
+        font-size: 16px; 
     }
 
     .tab-button {
-        font-size: 14px;
-        padding: 8px 16px;
+        padding: 8px 15px; 
+        font-size: 14px; 
     }
 
     .tab-content {
+        padding: 15px; 
+        width: 90%; 
+    }
+
+    footer {
+        padding: 15px 0; 
+    }
+
+    .tab-content h2 {
+        font-size: 20px; 
+    }
+
+    
+    nav {
+        flex-direction: column;
         padding: 15px;
     }
+
+    .tab-button {
+        width: 100%; 
+        margin: 5px 0; 
+    }
 }
+
+/* تصميم للأجهزة اللوحية */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    header h1 {
+        font-size: 28px; 
+    }
+
+    header p {
+        font-size: 18px;
+    }
+
+    .tab-button {
+        padding: 10px 20px; 
+        font-size: 16px;
+    }
+
+    .tab-content {
+        width: 80%; 
+    }
+}
+
+/* تصميم للأجهزة الكبيرة (الشاشات الكبيرة) */
+@media screen and (min-width: 1025px) {
+    .tab-content {
+        width: 70%; 
+    }
+}
+
+
 
 
 @keyframes fadeIn {

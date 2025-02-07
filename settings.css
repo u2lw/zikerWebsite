@@ -201,6 +201,7 @@ footer {
 
     footer {
         padding: 15px 0; 
+        height: auto;
     }
 
     .tab-content h2 {
